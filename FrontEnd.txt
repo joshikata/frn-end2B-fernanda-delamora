@@ -1,0 +1,22 @@
+https://github.com/joshikata/frn-end2B-fernanda-delamora.git
+
+ETAPA1 28-05-26:estilizar la landing page con tematica de veterinaria, el navbar debe tener el logo de la clinica, links de navegacion, el hero debe tener imagen un titulo y boton que rediriga a un registro.html, la seccion de servicios, la de especialidades, el equipo los testimonios y el footer, todo responsive y con una paleta de colores verdes, blancos y azules, dos tipogradias para titulos y cuerpo, las cards deben tener un efecto hoover.
+Respuesta Recibida: Analizó los archivos e hizo lo solicitado, modificó mas que nada el css ya que la landing page tenia una base sin css.
+La usé tal cual y también la mejoré, le integré imágenes y cambié el nombre a lo solicitado en el proyecto.
+Fue útil, ya que hay que ser claro en que se quiere mejorar o que archivos usar, si obtuve lo que esperaba quizás tuve que ser mas especifica con lo solicitado.
+
+
+Etapa2 28-5-26: el registro debe tener datos del dueño, nombre fecha de nacimiento, dni correo, confirmacion contraseña , telefono de contacto , localidad y provincia, todos obligatorios con input y que debe alertar con color rojo en css cuando no se rellene estos campos.
+en otra seccion deben estar los datos de la mascota con nombre, especie con un select, raza, sexo con radio buttons, fecha de nacimiento, color , castrado con checkbox, con microchip y alergias
+RESPUESTA RECIBIDA: se actualiza formulario HTML, se crea registro css con estilos del formulario y resaltado en rojo para campos invalidos.
+Se usa como lo propone ya que cumple lo requerido, no se modifica y si se obtiene lo esperado.
+
+ETAPA 2: 28-5-2026 todos los campos deben tener etiqueta label, los campos deben cambiar con focus y sombra suave, se deben crear clases en css con campo error y campo ok, las secciones del formulario deben estar separadas con fondo diferente , borde redondeado o linea divisoria, diseño responsive y los checkboxes deben estar dentro de un fieldset con su legend, el formulario debe estar centrado con un maximo de 750 pixeles
+RESPUESTA RECIBIDA: se revisa formulario y se actualiza con wrappers por campo, clases de estadp focus suave y diseño responsivo y centradro. Se usa como se proponeal ser especifico con lo solicitado cumple lo necesario.
+
+ETAPA 3: 28-5 5crear una validacion exhaustiva al registro.html , se revisa archivo con un script actual en registro y para mover una validación a un archivo externo y hacerla exhaustiva. Se usa un prompt generalizado para luego pedirle las especificaciones mas detalladas, pero cumple con lo solicitado.
+
+Etapa 3: 28-5 la interfax debe tener una retroalimentacion visual por campo, tener funcionalidades en tiempo real, usar un preventDefault para impedir el envio si hay errores, si el formulario pasa todas las validaciones ocultar el formulario, motrar una seccion de confirmacion con un mensaje personalizado que incluya tel id con un math random incluir un boton de volver al inicio y registrar otra mascota. usar elementos del dom, manejo de eventos, preventdefault, regex,classlistadd,remove, crete elemente, fechas, validar multiples campos y scrollintroview
+Se revisan los archivos y se agregan las solicitudes con una validación exhaustiva y lógica de confirmación con dom dinamico y scroll. Quizas cambiaria el darle mucho mas detalladas donde quiero que se apliquen estas acciones.
+
+se le pide readme mas detallado
