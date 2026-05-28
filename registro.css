@@ -1,20 +1,177 @@
-/* Styles for registro form */
-:root{--green:#2e8b57;--muted:#6b7280;--card:#fff}
-body{font-family:Roboto, system-ui, Arial, sans-serif}
-.form-container{padding:36px 0}
-form{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
-fieldset{border:0;margin:0 0 16px;padding:0}
-legend{font-family:Montserrat, sans-serif;font-weight:700;margin-bottom:8px;color:var(--green)}
-label{display:block;margin-top:10px;font-weight:500}
-input[type=text],input[type=email],input[type=password],input[type=tel],input[type=date],select,textarea{width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef2;border-radius:8px}
-input.invalid,select.invalid,textarea.invalid{border-color:#e11d48;box-shadow:0 0 0 3px rgba(225,29,72,0.06)}
-.radio-row{display:flex;gap:12px;margin-top:8px}
-.radio-row.invalid{outline:2px solid rgba(225,29,72,0.15);padding:8px;border-radius:8px}
-.checkbox-label{display:inline-flex;align-items:center;gap:8px;margin-top:8px}
-.form-actions{margin-top:18px;display:flex;gap:12px;align-items:center}
-.btn-link{text-decoration:none;color:var(--muted)}
-.error-message{color:#e11d48;font-size:.9rem;margin-top:6px}
+:root{
+  --green:#2e8b57;
+  --green-2:#4caf50;
+  --blue:#1e88e5;
+  --muted:#6b7280;
+  --bg:#eef6f5;
+  --surface:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:'Roboto', system-ui, Arial, sans-serif;
+  background:linear-gradient(180deg, #f4fbf9 0%, var(--bg) 100%);
+  color:#102a43;
+}
+
+.form-container{
+  padding:40px 16px 60px;
+  display:flex;
+  justify-content:center;
+}
+
+form{
+  width:100%;
+  max-width:750px;
+  background:var(--surface);
+  padding:28px;
+  border-radius:24px;
+  box-shadow:0 22px 56px rgba(16,24,40,0.12);
+  border:1px solid rgba(66,153,225,0.14);
+}
+
+.form-section{
+  background:#f7fbfd;
+  border:1px solid #d9eef2;
+  border-radius:18px;
+  padding:24px;
+  margin-bottom:22px;
+}
+
+legend{
+  font-family:'Montserrat', sans-serif;
+  font-size:1.05rem;
+  font-weight:700;
+  color:var(--green);
+  padding:0 6px;
+}
+
+.field-group{
+  margin-top:18px;
+}
+
+label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+.field-label{
+  margin-bottom:10px;
+  display:block;
+  font-weight:600;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=date],
+select,
+textarea{
+  width:100%;
+  padding:14px 14px;
+  border:1px solid #cbd5db;
+  border-radius:14px;
+  background:#fff;
+  transition:border-color .25s ease,box-shadow .25s ease;
+  font-family:inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  outline:none;
+  border-color:var(--blue);
+  box-shadow:0 0 0 8px rgba(30,136,229,0.12);
+}
+
+.checkbox-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(140px,1fr));
+  gap:12px;
+  margin-top:14px;
+}
+
+.checkbox-label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:14px;
+  border:1px solid #d7e9ef;
+  border-radius:14px;
+  background:#fff;
+  cursor:pointer;
+  font-weight:500;
+}
+
+.radio-row{
+  display:flex;
+  gap:22px;
+  flex-wrap:wrap;
+  align-items:center;
+  padding:14px;
+  border:1px solid #cbd5db;
+  border-radius:14px;
+  background:#fff;
+}
+
+.radio-row label{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+.form-actions{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-top:20px;
+}
+
+.btn-link{
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.campo-error input,
+.campo-error select,
+.campo-error textarea,
+.campo-error .radio-row{
+  border-color:#e11d48;
+  box-shadow:0 0 0 5px rgba(225,29,72,0.12);
+}
+
+.campo-error label{
+  color:#b91c1c;
+}
+
+.campo-ok input,
+.campo-ok select,
+.campo-ok textarea,
+.campo-ok .radio-row{
+  border-color:var(--green-2);
+  box-shadow:0 0 0 5px rgba(46,139,87,0.14);
+}
+
+.campo-ok label{
+  color:#166534;
+}
 
 @media (max-width:700px){
-  .radio-row{flex-direction:column}
+  .checkbox-grid{
+    grid-template-columns:1fr;
+  }
+  .form-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  form{
+    padding:22px;
+  }
 }

@@ -13,69 +13,106 @@
     <h1 class="section-title">Regístrate en VetCare</h1>
     <p>Completa tus datos para crear una cuenta y agendar una cita rápidamente.</p>
     <form id="registroForm" action="#" method="post" novalidate>
-      <fieldset>
+      <fieldset class="form-section">
         <legend>Datos del dueño</legend>
-        <label for="owner-name">Nombre completo</label>
-        <input id="owner-name" name="owner_name" type="text" placeholder="Tu nombre" required>
-
-        <label for="owner-dob">Fecha de nacimiento</label>
-        <input id="owner-dob" name="owner_dob" type="date" required>
-
-        <label for="owner-dni">DNI</label>
-        <input id="owner-dni" name="owner_dni" type="text" placeholder="DNI" required>
-
-        <label for="owner-email">Correo electrónico</label>
-        <input id="owner-email" name="owner_email" type="email" placeholder="tucorreo@ejemplo.com" required>
-
-        <label for="owner-password">Contraseña</label>
-        <input id="owner-password" name="owner_password" type="password" minlength="6" required>
-
-        <label for="owner-password-confirm">Confirmar contraseña</label>
-        <input id="owner-password-confirm" name="owner_password_confirm" type="password" minlength="6" required>
-
-        <label for="owner-phone">Teléfono de contacto</label>
-        <input id="owner-phone" name="owner_phone" type="tel" placeholder="(00) 0000-0000" required>
-
-        <label for="owner-city">Localidad</label>
-        <input id="owner-city" name="owner_city" type="text" required>
-
-        <label for="owner-province">Provincia</label>
-        <input id="owner-province" name="owner_province" type="text" required>
-      </fieldset>
-
-      <fieldset>
-        <legend>Datos de la mascota</legend>
-        <label for="pet-name">Nombre</label>
-        <input id="pet-name" name="pet_name" type="text" required>
-
-        <label for="pet-species">Especie</label>
-        <select id="pet-species" name="pet_species" required>
-          <option value="">Seleccione...</option>
-          <option value="perro">Perro</option>
-          <option value="gato">Gato</option>
-          <option value="otro">Otro</option>
-        </select>
-
-        <label for="pet-breed">Raza</label>
-        <input id="pet-breed" name="pet_breed" type="text" required>
-
-        <span class="radio-group">Sexo</span>
-        <div class="radio-row" id="pet-sex">
-          <label><input type="radio" name="pet_sex" value="macho" required> Macho</label>
-          <label><input type="radio" name="pet_sex" value="hembra"> Hembra</label>
+        <div class="field-group">
+          <label for="owner-name">Nombre completo</label>
+          <input id="owner-name" name="owner_name" type="text" placeholder="Tu nombre" required>
         </div>
 
-        <label for="pet-dob">Fecha de nacimiento</label>
-        <input id="pet-dob" name="pet_dob" type="date" required>
+        <div class="field-group">
+          <label for="owner-dob">Fecha de nacimiento</label>
+          <input id="owner-dob" name="owner_dob" type="date" required>
+        </div>
 
-        <label for="pet-color">Color</label>
-        <input id="pet-color" name="pet_color" type="text" required>
+        <div class="field-group">
+          <label for="owner-dni">DNI</label>
+          <input id="owner-dni" name="owner_dni" type="text" placeholder="DNI" required>
+        </div>
 
-        <label class="checkbox-label"><input type="checkbox" id="pet-neutered" name="pet_neutered"> Castrado</label>
-        <label class="checkbox-label"><input type="checkbox" id="pet-microchip" name="pet_microchip"> Con microchip</label>
+        <div class="field-group">
+          <label for="owner-email">Correo electrónico</label>
+          <input id="owner-email" name="owner_email" type="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
 
-        <label for="pet-allergies">Alergias (si tiene)</label>
-        <textarea id="pet-allergies" name="pet_allergies" rows="3" placeholder="Describir alergias"></textarea>
+        <div class="field-group">
+          <label for="owner-password">Contraseña</label>
+          <input id="owner-password" name="owner_password" type="password" minlength="6" required>
+        </div>
+
+        <div class="field-group">
+          <label for="owner-password-confirm">Confirmar contraseña</label>
+          <input id="owner-password-confirm" name="owner_password_confirm" type="password" minlength="6" required>
+        </div>
+
+        <div class="field-group">
+          <label for="owner-phone">Teléfono de contacto</label>
+          <input id="owner-phone" name="owner_phone" type="tel" placeholder="(00) 0000-0000" required>
+        </div>
+
+        <div class="field-group">
+          <label for="owner-city">Localidad</label>
+          <input id="owner-city" name="owner_city" type="text" required>
+        </div>
+
+        <div class="field-group">
+          <label for="owner-province">Provincia</label>
+          <input id="owner-province" name="owner_province" type="text" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section">
+        <legend>Datos de la mascota</legend>
+        <div class="field-group">
+          <label for="pet-name">Nombre</label>
+          <input id="pet-name" name="pet_name" type="text" required>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-species">Especie</label>
+          <select id="pet-species" name="pet_species" required>
+            <option value="">Seleccione...</option>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-breed">Raza</label>
+          <input id="pet-breed" name="pet_breed" type="text" required>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label">Sexo</label>
+          <div class="radio-row" id="pet-sex">
+            <label><input type="radio" name="pet_sex" value="macho" required> Macho</label>
+            <label><input type="radio" name="pet_sex" value="hembra"> Hembra</label>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-dob">Fecha de nacimiento</label>
+          <input id="pet-dob" name="pet_dob" type="date" required>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-color">Color</label>
+          <input id="pet-color" name="pet_color" type="text" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-section checkbox-section">
+        <legend>Opciones de la mascota</legend>
+        <div class="checkbox-grid">
+          <label class="checkbox-label"><input type="checkbox" id="pet-neutered" name="pet_neutered"> Castrado</label>
+          <label class="checkbox-label"><input type="checkbox" id="pet-microchip" name="pet_microchip"> Con microchip</label>
+        </div>
+
+        <div class="field-group">
+          <label for="pet-allergies">Alergias (si tiene)</label>
+          <textarea id="pet-allergies" name="pet_allergies" rows="3" placeholder="Describir alergias"></textarea>
+        </div>
       </fieldset>
 
       <div class="form-actions">
@@ -85,71 +122,6 @@
     </form>
   </main>
 
-  <script>
-    (function(){
-      const form = document.getElementById('registroForm');
-      const password = document.getElementById('owner-password');
-      const passwordConfirm = document.getElementById('owner-password-confirm');
-
-      function setInvalid(el){
-        el.classList.add('invalid');
-      }
-      function clearInvalid(el){
-        el.classList.remove('invalid');
-      }
-
-      form.addEventListener('submit', function(e){
-        let valid = true;
-        // Use built-in validation first
-        if(!form.checkValidity()) valid = false;
-
-        // Password match
-        if(password.value !== passwordConfirm.value){
-          valid = false;
-          setInvalid(password);
-          setInvalid(passwordConfirm);
-        }
-
-        // Radio group validation
-        const sexChecked = form.querySelector('input[name="pet_sex"]:checked');
-        const sexContainer = document.getElementById('pet-sex');
-        if(!sexChecked){
-          valid = false;
-          sexContainer.classList.add('invalid');
-        } else {
-          sexContainer.classList.remove('invalid');
-        }
-
-        if(!valid){
-          e.preventDefault();
-          // add invalid class to all invalid elements
-          const elements = form.querySelectorAll('input,select,textarea');
-          elements.forEach(el => {
-            if(!el.checkValidity() && el.type !== 'radio' && el.type !== 'checkbox'){
-              setInvalid(el);
-            }
-          });
-          // focus first invalid
-          const first = form.querySelector('.invalid');
-          if(first) first.focus();
-        }
-      });
-
-      // Clear invalid on input
-      form.addEventListener('input', function(e){
-        const el = e.target;
-        if(el.checkValidity()) clearInvalid(el);
-        if(el === password || el === passwordConfirm){
-          if(password.value === passwordConfirm.value){
-            clearInvalid(password); clearInvalid(passwordConfirm);
-          }
-        }
-        // radio handling
-        if(el.name === 'pet_sex'){
-          document.getElementById('pet-sex').classList.remove('invalid');
-        }
-      });
-    })();
-  </script>
+  <script src="validaciones.js"></script>
 </body>
 </html>
