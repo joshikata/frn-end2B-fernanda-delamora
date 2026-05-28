@@ -1,0 +1,20 @@
+/* Styles for registro form */
+:root{--green:#2e8b57;--muted:#6b7280;--card:#fff}
+body{font-family:Roboto, system-ui, Arial, sans-serif}
+.form-container{padding:36px 0}
+form{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 8px 20px rgba(2,6,23,0.06)}
+fieldset{border:0;margin:0 0 16px;padding:0}
+legend{font-family:Montserrat, sans-serif;font-weight:700;margin-bottom:8px;color:var(--green)}
+label{display:block;margin-top:10px;font-weight:500}
+input[type=text],input[type=email],input[type=password],input[type=tel],input[type=date],select,textarea{width:100%;padding:10px;margin-top:6px;border:1px solid #e6eef2;border-radius:8px}
+input.invalid,select.invalid,textarea.invalid{border-color:#e11d48;box-shadow:0 0 0 3px rgba(225,29,72,0.06)}
+.radio-row{display:flex;gap:12px;margin-top:8px}
+.radio-row.invalid{outline:2px solid rgba(225,29,72,0.15);padding:8px;border-radius:8px}
+.checkbox-label{display:inline-flex;align-items:center;gap:8px;margin-top:8px}
+.form-actions{margin-top:18px;display:flex;gap:12px;align-items:center}
+.btn-link{text-decoration:none;color:var(--muted)}
+.error-message{color:#e11d48;font-size:.9rem;margin-top:6px}
+
+@media (max-width:700px){
+  .radio-row{flex-direction:column}
+}
