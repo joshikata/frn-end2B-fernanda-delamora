@@ -1,0 +1,43 @@
+estilizar pagina del index de manera profesional con colores suaves y tipografia legible, ademas de agregar un fondo atractivo y un diseño responsivo para dispositivos moviles */
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    header, main, footer {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+}
+    main p {
+        font-size: 16px;
+    }
