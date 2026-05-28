@@ -6,63 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">MyCompany</div>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#specialties">Specialties</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav container">
+            <a class="logo" href="#" aria-label="Clínica Veterinaria"> 
+                <!-- simple paw SVG logo -->
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 13c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z" fill="#2E8B57"/>
+                    <path d="M4.5 14.5c1.657 0 3-1.343 3-3S6.157 8.5 4.5 8.5 1.5 9.843 1.5 11.5s1.843 3 3 3z" fill="#4CAF50"/>
+                    <path d="M19.5 14.5c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z" fill="#4CAF50"/>
+                    <path d="M7 17.5c0 1.933 3.134 3.5 5 3.5s5-1.567 5-3.5c0-2.5-2.239-4.5-5-4.5s-5 2-5 4.5z" fill="#1E88E5"/>
+                </svg>
+                <span class="clinic-name">VetCare</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#specialties">Especialidades</a></li>
+                <li><a href="#team">Equipo</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a class="btn-outline" href="registro.html">Registrarse</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <h1>Welcome to MyCompany</h1>
-        <p>Your success is our priority.</p>
-        <button>Get Started</button>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-media" role="img" aria-label="Mascota feliz">
+                <img src="assets/doggo.avif" alt="Mascota feliz">
+            </div>
+            <div class="hero-content container">
+                <h1>Cuida a tu mejor amigo en VetCare</h1>
+                <p>Atención veterinaria integral, cariño y profesionalismo para todas las mascotas.</p>
+                <a href="registro.html" class="btn primary">Regístrate</a>
+            </div>
+        </section>
 
-    <section id="services" class="cards">
-        <div class="card">
-            <h2>Service 1</h2>
-            <p>Description of Service 1.</p>
+        <section id="services" class="section container">
+            <h2 class="section-title">Servicios</h2>
+            <div class="grid cards">
+                <article class="card">
+                    <h3>Consultas Generales</h3>
+                    <p>Chequeos regulares y consejos de salud personalizados para tu mascota.</p>
+                </article>
+                <article class="card">
+                    <h3>Cirugías Seguras</h3>
+                    <p>Procedimientos con anestesia controlada y monitoreo profesional.</p>
+                </article>
+                <article class="card">
+                    <h3>Vacunación y Desparasitado</h3>
+                    <p>Programas de inmunización y prevención adaptados por edad y especie.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="specialties" class="section container specialties">
+            <h2 class="section-title">Especialidades</h2>
+            <div class="grid">
+                <div class="specialty card">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=800&q=60" alt="Radiología"/>
+                    <h3>Radiología</h3>
+                    <p>Diagnóstico por imagen para casos complejos.</p>
+                </div>
+                <div class="specialty card">
+                    <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?auto=format&fit=crop&w=800&q=60" alt="Dentista veterinario"/>
+                    <h3>Odontología</h3>
+                    <p>Cuidado dental preventivo y tratamientos especializados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section container team">
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="grid team-grid">
+                <div class="card team-member">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=400&q=60" alt="Dra. Ana"/>
+                    <h4>Dra. Ana López</h4>
+                    <p>Veterinaria especialista en cirugía</p>
+                </div>
+                <div class="card team-member">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt="Dr. Carlos"/>
+                    <h4>Dr. Carlos Ruiz</h4>
+                    <p>Medicina interna y emergencias</p>
+                </div>
+                <div class="card team-member">
+                    <img src="assets/veti.avif" alt="Auxiliar"/>
+                    <h4>María Gómez</h4>
+                    <p>Técnica en cuidados y atención al cliente</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section container testimonials">
+            <h2 class="section-title">Testimonios</h2>
+            <div class="grid">
+                <blockquote class="card testimonial">
+                    <p>"Gracias a VetCare mi perro Bruno se recuperó rápidamente. Atención impecable."</p>
+                    <footer>- Laura M.</footer>
+                </blockquote>
+                <blockquote class="card testimonial">
+                    <p>"Personal muy amable y profesionales. Recomiendo 100%."</p>
+                    <footer>- Pedro G.</footer>
+                </blockquote>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>VetCare</strong>
+                <p>Clínica veterinaria · Amor y salud para tus mascotas</p>
+            </div>
+            <div>
+                <strong>Contacto</strong>
+                <p>Tel: (000) 123-4567 · info@vetcare.example</p>
+            </div>
+            <div>
+                <strong>Horario</strong>
+                <p>Lun - Vie: 9:00 - 18:00 · Sáb: 9:00 - 13:00</p>
+            </div>
         </div>
-        <div class="card">
-            <h2>Service 2</h2>
-            <p>Description of Service 2.</p>
-        </div>
-        <div class="card">
-            <h2>Service 3</h2>
-            <p>Description of Service 3.</p>
-        </div>
-    </section>
-
-    <section id="specialties" class="specialties">
-        <div class="specialty">
-            <img src="specialty1.jpg" alt="Specialty 1">
-            <h3>Specialty 1</h3>
-            <p>Description of Specialty 1.</p>
-        </div>
-        <div class="specialty">
-            <img src="specialty2.jpg" alt="Specialty 2">
-            <h3>Specialty 2</h3>
-            <p>Description of Specialty 2.</p>
-        </div>
-    </section>
-
-    <section id="team" class="team">
-        <h2>Our Team</h2>
-        <!-- Team members will go here -->
-    </section>
-
-    <section id="testimonials" class="testimonials">
-        <h2>Testimonials</h2>
-        <!-- Testimonials will go here -->
-    </section>
-
-    <footer>
-        &copy; 2024 MyCompany. All rights reserved.
+        <div class="container copyright">&copy; 2026 VetCare. Todos los derechos reservados.</div>
     </footer>
+    <script>
+        // Mobile nav toggle
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        if(toggle){
+            toggle.addEventListener('click', () => links.classList.toggle('open'));
+        }
+    </script>
+    </body>
+    </html>
 </html>
